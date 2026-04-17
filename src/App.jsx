@@ -4,6 +4,7 @@ import { PortfolioProvider } from "./contexts/PortfolioContext";
 import { UserProfileProvider } from "./contexts/UserProfileContext";
 import { transformAllProducts } from "./utils/transformData";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -102,6 +103,7 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <Analytics />
       </UserProfileProvider>
     </PortfolioProvider>
   );
