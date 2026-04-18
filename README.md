@@ -67,30 +67,30 @@ No prior investment knowledge required.
 
 ## Features
 
-| Feature | What it does |
-|---|---|
-| **Dynamic Catalog** | 30 products fetched from DummyJSON, transformed into financial instruments on every load |
-| **Multi-Criteria Filtering** | Filter by risk level, return range, category, liquidity, time horizon, and max investment simultaneously |
-| **Investor Profile** | Five-field form: risk tolerance, time horizon, monthly budget, liquidity preference, and investment goal |
-| **Recommendation Engine** | Four-pass filter algorithm that matches your profile to suitable products, then sorts by return |
-| **Live Portfolio Metrics** | Total invested, weighted average return, and risk distribution update instantly as you adjust allocations |
-| **Deterministic Data** | A seeded function ensures every product shows the same financial attributes on every page refresh |
+| Feature                      | What it does                                                                                              |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Dynamic Catalog**          | 30 products fetched from DummyJSON, transformed into financial instruments on every load                  |
+| **Multi-Criteria Filtering** | Filter by risk level, return range, category, liquidity, time horizon, and max investment simultaneously  |
+| **Investor Profile**         | Five-field form: risk tolerance, time horizon, monthly budget, liquidity preference, and investment goal  |
+| **Recommendation Engine**    | Four-pass filter algorithm that matches your profile to suitable products, then sorts by return           |
+| **Live Portfolio Metrics**   | Total invested, weighted average return, and risk distribution update instantly as you adjust allocations |
+| **Deterministic Data**       | A seeded function ensures every product shows the same financial attributes on every page refresh         |
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | React 19 |
-| Build Tool | Vite 8 |
-| Routing | React Router DOM v7 |
-| State Management | Context API with `useMemo` |
-| Styling | Vanilla CSS with CSS custom properties |
-| Notifications | react-hot-toast |
-| Analytics | Vercel Analytics |
-| Data Source | DummyJSON REST API |
-| Deployment | Vercel |
+| Layer            | Technology                             |
+| ---------------- | -------------------------------------- |
+| Framework        | React 19                               |
+| Build Tool       | Vite 8                                 |
+| Routing          | React Router DOM v7                    |
+| State Management | Context API with `useMemo`             |
+| Styling          | Vanilla CSS with CSS custom properties |
+| Notifications    | react-hot-toast                        |
+| Analytics        | Vercel Analytics                       |
+| Data Source      | DummyJSON REST API                     |
+| Deployment       | Vercel                                 |
 
 ---
 
@@ -216,11 +216,11 @@ See the full pipeline diagram:
 
 ### Risk and Return Bands
 
-| Risk Level | Expected Return | Categories |
-|---|---|---|
-| Low | 3% to 7% p.a. | Savings, Insurance |
-| Medium | 7% to 12% p.a. | Investment |
-| High | 12% to 27% p.a. | Crypto |
+| Risk Level | Expected Return | Categories         |
+| ---------- | --------------- | ------------------ |
+| Low        | 3% to 7% p.a.   | Savings, Insurance |
+| Medium     | 7% to 12% p.a.  | Investment         |
+| High       | 12% to 27% p.a. | Crypto             |
 
 ---
 
@@ -268,17 +268,20 @@ See the full flowchart:
 All three metrics recalculate the moment any allocation changes, via `useMemo` inside `PortfolioContext`.
 
 **Total Invested**
+
 ```
 totalInvested = sum of all allocatedAmount values
 ```
 
 **Weighted Return**
+
 ```
 weightedReturn = sum of (allocatedAmount / totalInvested) * expectedReturn
                  for each item in the portfolio
 ```
 
 **Risk Distribution**
+
 ```
 riskDistribution.low    = (sum of low-risk allocations / totalInvested) * 100
 riskDistribution.medium = (sum of medium-risk allocations / totalInvested) * 100
@@ -328,9 +331,3 @@ Vercel auto-detects the Vite config and handles the build.
 23i-5010 | FAST National University
 
 ---
-
-<div align="center">
-
-Built for the Web Programming course at FAST-NU.
-
-</div>
