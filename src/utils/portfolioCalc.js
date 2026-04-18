@@ -50,4 +50,3 @@ export function calculatePortfolioStats(items) {
 
   return { totalInvested, weightedReturn, riskDistribution };
 }
-

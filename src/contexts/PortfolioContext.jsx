@@ -64,7 +64,6 @@ export function PortfolioProvider({ children }) {
   );
 }
 
-
 export function usePortfolio() {
   const context = useContext(PortfolioContext);
   if (!context) {

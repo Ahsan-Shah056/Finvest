@@ -1,7 +1,7 @@
 {
   "name": "assignment2",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -26,6 +26,5 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
     "vite": "^8.0.1"
-  },
-  "description": "FinVest \u2014 Dynamic Financial Product Discovery Platform"
+  }
 }

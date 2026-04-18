@@ -25,7 +25,6 @@ export default function FilterPanel({ filters, onFilterChange, productCount }) {
     });
   }
 
-
   return (
     <div className="filter-panel">
       <div className="filter-panel-header">

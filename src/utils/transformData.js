@@ -19,7 +19,6 @@ const RETURN_RANGES = {
 };
 
 
-
 const LIQUIDITY_MAP = {
   savings: "easy",
   crypto: "easy",
