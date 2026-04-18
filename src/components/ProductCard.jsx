@@ -16,6 +16,7 @@ export default function ProductCard({ product }) {
     }
   }
 
+
   return (
     <div className="product-card">
       <div className="product-card-image-container">
