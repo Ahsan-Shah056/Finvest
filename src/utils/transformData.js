@@ -1,6 +1,4 @@
 
-
-
 const CATEGORIES = ["savings", "investment", "insurance", "crypto"];
 
 
