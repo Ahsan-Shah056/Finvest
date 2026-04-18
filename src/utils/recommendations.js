@@ -8,6 +8,7 @@ const RISK_TOLERANCE_MAP = {
 };
 
 
+
 const HORIZON_MAP = {
   short: ["short"],
   medium: ["short", "medium"],
