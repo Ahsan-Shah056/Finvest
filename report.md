@@ -20,3 +20,17 @@ and time horizon.
 - Investor profile builder
 - Personalized recommendation engine
 - Live portfolio management with weighted return calculation
+
+## 2. Component Architecture
+
+**App** owns data fetching and wraps everything in PortfolioProvider and UserProfileProvider.
+**Products** manages filter state and derives the visible list inline on every render.
+**FilterPanel** is stateless — it receives filters and an onChange callback.
+**ProductCard** connects to PortfolioContext to add products to the stash.
+**Portfolio** reads directly from PortfolioContext with no props from App.
+
+## 3. State Management
+
+useState handles local UI state (form fields, filter values, loading/error flags).
+PortfolioContext manages the stash, allocations, and live stats via useMemo.
+UserProfileContext stores the investor profile and exposes the recommendation bridge.
