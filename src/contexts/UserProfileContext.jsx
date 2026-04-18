@@ -52,6 +52,7 @@ export function UserProfileProvider({ children }) {
   );
 }
 
+
 export function useUserProfile() {
   const context = useContext(UserProfileContext);
   if (!context) {
