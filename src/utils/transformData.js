@@ -1,4 +1,6 @@
 
+
+
 const CATEGORIES = ["savings", "investment", "insurance", "crypto"];
 
 
@@ -15,6 +17,7 @@ const RETURN_RANGES = {
   medium: [7, 12],
   high: [12, 27],
 };
+
 
 
 const LIQUIDITY_MAP = {
